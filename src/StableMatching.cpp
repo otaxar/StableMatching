@@ -54,14 +54,6 @@ int main() {
 		    mPrefs[5].insert_front(4); mPrefs[5].insert_front(3); mPrefs[5].insert_front(5);
 		    mPrefs[5].insert_front(0); mPrefs[5].insert_front(2); mPrefs[5].insert_front(1);
 
-			//cout << "\nPrinting m Prefs (deque):";					// DEBUG
-		    //cout << "\nm0: "; mPrefs[0].printDeque();
-		    //cout << "\nm1: "; mPrefs[1].printDeque();
-		    //cout << "\nm2: "; mPrefs[2].printDeque();
-		    //cout << "\nm3: "; mPrefs[3].printDeque();
-		    //cout << "\nm4: "; mPrefs[4].printDeque();
-		    //cout << "\nm5: "; mPrefs[5].printDeque();
-
 		    // 3) Create arrays with womens preferences
 		    int wPrefs [6][6] = {  							// TODO: later, load prefs
 		    		{5, 1, 2, 0, 4, 3},						//       from .txt file
@@ -70,16 +62,6 @@ int main() {
 					{5, 1, 2, 4, 0, 3},
 					{4, 2, 3, 0, 1, 5},
 					{4, 3, 1, 5, 0, 2}		};
-		    /*
-		    cout << "\n\nwPrefs:";							// PRINT wPrefs - DEBUG
-		    for (int i = 0; i < n; i++) {
-		    	cout << "\nw" << i << ": ";
-		    	for (int j = 0; j < n; j++ ){
-		    		//iwPrefs[ wPrefs[i] ][ wPrefs[j] ] = j;
-		    		cout << wPrefs[i][j] << ", ";
-		    	}
-		    }
-		    */
 
 		    int iwPrefs [n][n];						// Inverse of wPrefs, OPTIMIZATION for
 		    for (int i = 0; i < n; i++) {			// faster comparison of men`s ranking
